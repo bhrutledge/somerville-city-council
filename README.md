@@ -27,6 +27,7 @@ The sheet includes other details, like website/Twitter/Facebook links, plus the 
 ## TODO
 
 - [x] [Google Map of wards & councilors](https://www.google.com/maps/d/edit?mid=1NdzlUAOXIOcEXqEbAkA9X0g-auts70Ue)
+    - Proof of concept
     - Councilors imported from Sheet, but not connected
     - Wards imported from [KML converted from Shapefile](https://mygeodata.cloud/converter/shp-to-kml)
         - Unsorted, includes extra data
@@ -39,12 +40,11 @@ The sheet includes other details, like website/Twitter/Facebook links, plus the 
 - [ ] GeoJSON of councilors
     - From JSON instead of CSV
     - How to handle line breaks on GitHub?
-        - HTML, along w/ links
-    - How does GitHub display nested properties?
+        - HTML, e.g. `<br>`
+    - How does GitHub display nested JSON properties?
 
 - [ ] GeoJSON of wards
-    - Join w/ councilors
-        - Maybe one `Point` for all "At-Large"
+    - Maybe one `Point` for all "At-Large"
 
 - [ ] Update/redo Google Map
     - Using KML from GeoJSON
