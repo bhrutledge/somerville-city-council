@@ -26,6 +26,8 @@ The sheet includes other details, like website/Twitter/Facebook links, plus the 
 
 ## TODO
 
+- [ ] Move these to GitHub issues
+
 - [x] [Google Map of wards & councilors](https://www.google.com/maps/d/edit?mid=1NdzlUAOXIOcEXqEbAkA9X0g-auts70Ue)
     - Proof of concept
     - Councilors imported from Sheet, but not connected
@@ -38,18 +40,27 @@ The sheet includes other details, like website/Twitter/Facebook links, plus the 
     - Probably via Python
 
 - [ ] GeoJSON of councilors
-    - From JSON instead of CSV
+    - Distinguish "At-Large" councilors (maybe w/ [style](https://docs.github.com/en/github/managing-files-in-a-repository/mapping-geojson-files-on-github#styling-features))
     - How to handle line breaks on GitHub?
         - HTML, e.g. `<br>`
     - How does GitHub display nested JSON properties?
         - Arrays are comma-separated
         - Objects aren't expanded
+    - From JSON instead of CSV?
 
 - [ ] GeoJSON of wards
-    - Distinguish "At-Large" councilors (maybe w/ [style](https://docs.github.com/en/github/managing-files-in-a-repository/mapping-geojson-files-on-github#styling-features))
+    - w/o councilor points
+
+- [ ] GeoJSON of council
+    - Merge councilors and wards (maybe via `ogr2ogr -append`)
 
 - [ ] Update/redo Google Map
     - Using KML from GeoJSON
     - Group by ward?
 
 - [ ] Share repo & Google Map
+
+- [ ] Investigate [Mass Dept. of Revenue - DLS Gateway](https://dlsgateway.dor.state.ma.us/gateway/DLSPublic/Search#) as data source
+    - via Code For Boston
+    - Not as complete as website
+    - Requires form `POST` to download Excel w/ cumbersome layout
