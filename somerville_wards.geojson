@@ -1,15 +1,11 @@
 {
     "type": "FeatureCollection",
-    "name": "Somerville Wards",
     "features": [
         {
             "type": "Feature",
             "properties": {
                 "Ward": "1",
                 "Councilor": "Matt McLaughlin",
-                "Email": "mattforward1@gmail.com",
-                "Phone": "(617) 999-0924",
-                "Websites": "https://twitter.com/mattforward1\nhttps://www.facebook.com/Mattyforward1/",
                 "URL": "https://www.somervillema.gov/departments/city-council/ward-1"
             },
             "geometry": {
@@ -2785,9 +2781,6 @@
             "properties": {
                 "Ward": "2",
                 "Councilor": "J.T. Scott",
-                "Email": "jtscott@somervillema.gov",
-                "Phone": "(857) 615-1532",
-                "Websites": "http://jtforward2.com/\nhttps://twitter.com/JTforWard2\nhttps://www.facebook.com/jtforward2/",
                 "URL": "https://www.somervillema.gov/departments/city-council/ward-2"
             },
             "geometry": {
@@ -4583,9 +4576,6 @@
             "properties": {
                 "Ward": "3",
                 "Councilor": "Ben Ewen-Campen",
-                "Email": "benforward3@gmail.com",
-                "Phone": "(617) 702-2613",
-                "Websites": "https://www.benforward3.com/\nhttps://twitter.com/BenForWard3\nhttps://www.facebook.com/BenForWard3Somerville/\nhttps://www.instagram.com/benforward3/",
                 "URL": "https://www.somervillema.gov/departments/city-council/ward-3"
             },
             "geometry": {
@@ -5633,9 +5623,6 @@
             "properties": {
                 "Ward": "4",
                 "Councilor": "Jesse Clingan",
-                "Email": "aldermanclingan@gmail.com",
-                "Phone": "(617) 290-1904",
-                "Websites": "https://twitter.com/jesseforward4",
                 "URL": "https://www.somervillema.gov/departments/city-council/ward-4"
             },
             "geometry": {
@@ -6987,9 +6974,6 @@
             "properties": {
                 "Ward": "5",
                 "Councilor": "Mark Niedergang",
-                "Email": "mniedergang@somervillema.gov",
-                "Phone": "(617) 629-8033",
-                "Websites": "https://www.markniedergang.com/\nhttps://twitter.com/ward5mark\nhttps://www.facebook.com/MarkNiedergangCityCouncilorSomerville/",
                 "URL": "https://www.somervillema.gov/departments/city-council/ward-5"
             },
             "geometry": {
@@ -7921,9 +7905,6 @@
             "properties": {
                 "Ward": "6",
                 "Councilor": "Lance Davis",
-                "Email": "lancedavisward6@gmail.com",
-                "Phone": "(857) 261-1909",
-                "Websites": "http://www.lancedavis.org/\nhttps://www.facebook.com/lancedavisforward6\nhttps://twitter.com/lancedavis",
                 "URL": "https://www.somervillema.gov/departments/city-council/ward-6"
             },
             "geometry": {
@@ -8999,9 +8980,6 @@
             "properties": {
                 "Ward": "7",
                 "Councilor": "Katjana Ballantyne",
-                "Email": "katjana@katjana.org",
-                "Phone": "(857) 928-6852 ",
-                "Websites": "https://twitter.com/KatjBallantyne",
                 "URL": "https://www.somervillema.gov/departments/city-council/ward-7"
             },
             "geometry": {

@@ -1,6 +1,5 @@
 {
     "type": "FeatureCollection",
-    "name": "Somerville City Council",
     "features": [
         {
             "type": "Feature",

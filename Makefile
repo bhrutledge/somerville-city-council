@@ -6,17 +6,16 @@ council_csv := somerville_council.csv
 .PHONY: all
 all: $(wards_geojson) $(council_geojson)
 
-$(wards_geojson): $(wards_shz) $(council_csv)
+$(wards_geojson): $(wards_shz) $(council_geojson)
 	ogr2ogr /dev/stdout $< -f GeoJSON \
 		-sql "\
-			SELECT Ward, Name as Councilor, Email, Phone, Websites, URL \
+			SELECT Ward, Name as Councilor, URL \
 			FROM Wards AS wards \
 			JOIN '$(word 2, $^)'.$(basename $(word 2, $^)) AS council \
 			ON wards.Ward = council.ward \
-			ORDER BY Ward\
+			ORDER BY Ward \
 		" \
-		-t_srs EPSG:4326 -lco RFC7946=YES \
-		-nln "Somerville Wards" \
+		-t_srs EPSG:4326 -lco RFC7946=YES -lco WRITE_NAME=NO \
 		| python3 -m json.tool > $@
 
 $(wards_shz):
@@ -25,7 +24,7 @@ $(wards_shz):
 $(council_geojson): $(council_csv)
 	ogr2ogr /dev/stdout $< -f GeoJSON \
 		-oo X_POSSIBLE_NAMES=Longitude -oo Y_POSSIBLE_NAMES=Latitude \
-		-nln "Somerville City Council" \
+		-lco WRITE_NAME=NO \
 		| python3 -m json.tool > $@
 
 $(council_csv):
