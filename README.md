@@ -34,7 +34,7 @@ The sheet includes other details, like website/Twitter/Facebook links, plus the 
 
 - [ ] JSON of councilors
     - From CSV
-    - Nested properties instead of line breaks
+    - Arrays instead of newlines
     - Probably via Python
 
 - [ ] GeoJSON of councilors
@@ -42,12 +42,14 @@ The sheet includes other details, like website/Twitter/Facebook links, plus the 
     - How to handle line breaks on GitHub?
         - HTML, e.g. `<br>`
     - How does GitHub display nested JSON properties?
+        - Arrays are comma-separated
+        - Objects aren't expanded
 
 - [ ] GeoJSON of wards
-    - With `Point` for each councilor
+    - Distinguish "At-Large" councilors (maybe w/ [style](https://docs.github.com/en/github/managing-files-in-a-repository/mapping-geojson-files-on-github#styling-features))
 
 - [ ] Update/redo Google Map
     - Using KML from GeoJSON
-    - Group by ward
+    - Group by ward?
 
 - [ ] Share repo & Google Map
