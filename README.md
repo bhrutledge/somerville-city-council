@@ -11,7 +11,7 @@ brew install gdal
 Then, to re-download the data and rebuild the output, run:
 
 ```
-make clean all
+make -B
 ```
 
 ## Data Sources
@@ -44,14 +44,10 @@ The sheet includes other details, like website/Twitter/Facebook links, plus the 
     - How does GitHub display nested JSON properties?
 
 - [ ] GeoJSON of wards
-    - Maybe one `Point` for all "At-Large"
+    - With `Point` for each councilor
 
 - [ ] Update/redo Google Map
     - Using KML from GeoJSON
     - Group by ward
 
 - [ ] Share repo & Google Map
-
-- [ ] Representation of petition stats
-
-- [ ] Representation of council votes
