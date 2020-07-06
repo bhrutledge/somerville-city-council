@@ -48,8 +48,7 @@ The sheet includes other details, like website/Twitter/Facebook links, plus the 
         - Objects aren't expanded
     - From JSON instead of CSV?
 
-- [ ] GeoJSON of wards
-    - w/o councilor points
+- [x] GeoJSON of wards
 
 - [ ] GeoJSON of council
     - Merge councilors and wards (maybe via `ogr2ogr -append`)

@@ -2,28 +2,27 @@ wards_geojson := somerville_wards.geojson
 wards_shz := somerville_wards.shz
 councilors_geojson := somerville_councilors.geojson
 councilors_csv := somerville_councilors.csv
+council_geojson := somerville_city_council.geojson
 
 .PHONY: all
-all: $(wards_geojson) $(councilors_geojson)
+all: $(council_geojson)
 
-$(wards_geojson): $(wards_shz) $(councilors_geojson)
+$(council_geojson): $(wards_geojson) $(councilors_geojson)
+	$(eval wards_table = $(basename $<))
 	$(eval councilors = $(word 2, $^))
 	$(eval councilors_table = '$(councilors)'.$(basename $(councilors)))
 	ogr2ogr -f GeoJSON /vsistdout/ $< \
-		-sql "\
-			SELECT Ward, Name as Councilor \
-			FROM Wards AS wards \
-			JOIN $(councilors_table) AS councilors \
-			ON wards.Ward = councilors.ward \
-			ORDER BY Ward \
-		" \
-		-t_srs EPSG:4326 -lco RFC7946=YES \
-		-nln wards \
-	| ogr2ogr -f GeoJSON /vsistdout/ /vsistdin/ \
 		-sql " \
-			SELECT * FROM wards \
+			SELECT * FROM $(wards_table) \
 			UNION ALL SELECT * FROM $(councilors_table) \
 		" \
+		-lco RFC7946=YES -lco WRITE_NAME=NO \
+	| python3 -m json.tool > $@
+
+$(wards_geojson): $(wards_shz)
+	ogr2ogr -f GeoJSON /vsistdout/ $< \
+		-t_srs EPSG:4326 \
+		-sql "SELECT Ward FROM Wards ORDER BY Ward" \
 		-lco RFC7946=YES -lco WRITE_NAME=NO \
 	| python3 -m json.tool > $@
 
@@ -32,8 +31,9 @@ $(wards_shz):
 
 $(councilors_geojson): $(councilors_csv)
 	ogr2ogr -f GeoJSON /vsistdout/ $< \
+		-a_srs EPSG:4326 \
 		-oo X_POSSIBLE_NAMES=Longitude -oo Y_POSSIBLE_NAMES=Latitude \
-		-lco WRITE_NAME=NO \
+		-lco RFC7946=YES -lco WRITE_NAME=NO \
 	| python3 -m json.tool > $@
 
 $(councilors_csv):
