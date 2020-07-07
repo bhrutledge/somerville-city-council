@@ -30,9 +30,18 @@ $(wards_shz):
 	curl -L -o $@ https://data.somervillema.gov/download/ym5n-phxd/application%2Fzip
 
 $(councilors_geojson): $(councilors_csv)
+	$(eval councilors_table = $(basename $<))
 	ogr2ogr -f GeoJSON /vsistdout/ $< \
 		-a_srs EPSG:4326 \
 		-oo X_POSSIBLE_NAMES=Longitude -oo Y_POSSIBLE_NAMES=Latitude \
+		-sql "\
+			SELECT *, '#777' AS \"marker-color\" \
+			FROM $(councilors_table) \
+			WHERE Ward = 'At-Large'\
+			UNION ALL SELECT * \
+			FROM $(councilors_table) \
+			WHERE Ward != 'At-Large'\
+		" \
 		-lco RFC7946=YES -lco WRITE_NAME=NO \
 	| python3 -m json.tool > $@
 

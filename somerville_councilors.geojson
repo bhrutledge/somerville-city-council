@@ -15,7 +15,8 @@
                 "Longitude": -71.0805114,
                 "Committees": "Confirmation of Appointments and Personnel Matters\nEquity, Gender, Families, and Vulnerable Populations\nHousing and Community Development (Chair)\nFlood Forum\nAffordable Housing Trust\nCommunity Cabinet",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1401-Kristen-Strezo#votes",
-                "URL": "https://www.somervillema.gov/departments/city-council/at-large-1"
+                "URL": "https://www.somervillema.gov/departments/city-council/at-large-1",
+                "marker-color": "#777"
             },
             "geometry": {
                 "type": "Point",
@@ -39,7 +40,8 @@
                 "Longitude": -71.129651,
                 "Committees": "Confirmation of Appointments and Personnel Matters\nEquity, Gender, Families, and Vulnerable Populations (Chair)\nFinance\nLicenses and Permits (Vice Chair)\nOpen Space, Environment, and Energy (Vice Chair)\nParking Study Working Group",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1329-Wilfred-N-Mbah#votes",
-                "URL": "https://www.somervillema.gov/departments/city-council/at-large-2"
+                "URL": "https://www.somervillema.gov/departments/city-council/at-large-2",
+                "marker-color": "#777"
             },
             "geometry": {
                 "type": "Point",
@@ -63,7 +65,8 @@
                 "Longitude": -71.1134604,
                 "Committees": "Finance\nLand Use\nLicenses and Permits (Chair)\nOpen Space, Environment, and Energy\nPublic Utilities and Public Works (Vice Chair)\nRules (Chair)\nMinimum Mixed Use Ratio Working Group",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1005-William-A-White-Jr#votes",
-                "URL": "https://www.somervillema.gov/departments/city-council/at-large-3"
+                "URL": "https://www.somervillema.gov/departments/city-council/at-large-3",
+                "marker-color": "#777"
             },
             "geometry": {
                 "type": "Point",
@@ -87,7 +90,8 @@
                 "Longitude": -71.1251932,
                 "Committees": "Confirmation of Appointments and Personnel Matters (Chair)\nFinance\nFlood Forum\nHigh School Building Committee\nRodent Issues\nRules (Vice Chair)",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1209-Mary-Jo-Rossetti#votes",
-                "URL": "https://www.somervillema.gov/departments/city-council/at-large-4"
+                "URL": "https://www.somervillema.gov/departments/city-council/at-large-4",
+                "marker-color": "#777"
             },
             "geometry": {
                 "type": "Point",
