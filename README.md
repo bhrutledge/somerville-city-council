@@ -28,33 +28,29 @@ The sheet includes other details, like website/Twitter/Facebook links, plus the 
 
 - [ ] Move these to GitHub issues
 
-- [x] [Google Map of wards & councilors](https://www.google.com/maps/d/edit?mid=1NdzlUAOXIOcEXqEbAkA9X0g-auts70Ue)
-    - Proof of concept
-    - Councilors imported from Sheet, but not connected
-    - Wards imported from [KML converted from Shapefile](https://mygeodata.cloud/converter/shp-to-kml)
-        - Unsorted, includes extra data
-
-- [ ] JSON of councilors
-    - From CSV
-    - Arrays instead of newlines
-    - Probably via Python
-
 - [ ] GeoJSON of councilors
     - How to handle line breaks on GitHub?
         - HTML, e.g. `<br>`
+        - Maybe replace `\n` w/ `;`
     - How does GitHub display nested JSON properties?
         - Arrays are comma-separated
         - Objects aren't expanded
     - From JSON instead of CSV?
+        - Arrays instead of newlines
+        - Probably via Python
 
 - [x] GeoJSON of wards
 
-- [ ] GeoJSON of council
-    - Merge councilors and wards (maybe via `ogr2ogr -append`)
+- [x] GeoJSON of council
 
-- [ ] Update/redo Google Map
+- [ ] Update [Google Map of wards & councilors](https://www.google.com/maps/d/edit?mid=1NdzlUAOXIOcEXqEbAkA9X0g-auts70Ue)
+    - Currently a proof of concept
+        - Councilors imported from Sheet, but not connected
+        - Wards imported from [KML converted from Shapefile](https://mygeodata.cloud/converter/shp-to-kml)
+            - Unsorted, includes extra data
     - Using KML from GeoJSON
-    - Group by ward?
+
+- [ ] Branch w/ `marker-color` to distinguish yes/no votes
 
 - [ ] Share repo & Google Map
 
