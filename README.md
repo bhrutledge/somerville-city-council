@@ -34,22 +34,26 @@ The sheet includes other details, like website/Twitter/Facebook links, plus the 
 
 - [ ] Move these to GitHub issues
 
+- [ ] Add license
+
 - [ ] GeoJSON of councilors
     - Nested arrays for "Websites" and "Committees"?
         - Probably via Python
         - Displayed w/ commas on GitHub
 
-- [x] GeoJSON of wards
+- [ ] GeoJSON of wards
+    - Add demographic data
 
 - [x] GeoJSON of wards & councilors
 
 - [ ] [Google Map of wards & councilors](https://www.google.com/maps/d/edit?mid=1NdzlUAOXIOcEXqEbAkA9X0g-auts70Ue)
-    - Imported KML
+    - Using imported KML
     - Include styling in KML
 
-- [ ] Branch w/ `marker-color` to distinguish yes/no votes
+- [ ] Gist w/ `marker-color` to distinguish yes/no votes
 
-- [ ] Investigate [Mass Dept. of Revenue - DLS Gateway](https://dlsgateway.dor.state.ma.us/gateway/DLSPublic/Search#) as data source
-    - via Code For Boston
-    - Not as complete as website
-    - Requires form `POST` to download Excel w/ cumbersome layout
+- [ ] Find city council data source
+    - [Mass Dept. of Revenue - DLS Gateway](https://dlsgateway.dor.state.ma.us/gateway/DLSPublic/Search#)
+        - via Code For Boston
+        - Not as complete as website
+        - Requires form `POST` to download Excel w/ cumbersome layout
