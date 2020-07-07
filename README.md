@@ -2,8 +2,8 @@
 
 Geographic data for wards and city councilors with names and contact information.
 
-Open any `.geojson` file on GitHub to view the data as a map. For example:
-[Councilors and Wards](https://github.com/bhrutledge/somerville-city-council/blob/master/somerville_city_council.geojson)
+Open any `.geojson` file on GitHub to view the data on a map; for example:
+[Councilors and Wards](https://github.com/bhrutledge/somerville-city-council/blob/master/somerville_city_council.geojson). See [Mapping geoJSON files on GitHub](https://docs.github.com/en/github/managing-files-in-a-repository/mapping-geojson-files-on-github) for details.
 
 There's also a [Google Map](https://www.google.com/maps/d/edit?mid=1NdzlUAOXIOcEXqEbAkA9X0g-auts70Ue). However, it might not be in sync with the files in this repo; there's an [open issue](https://github.com/bhrutledge/somerville-city-council/issues/4) with more details.
 
