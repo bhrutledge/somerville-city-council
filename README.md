@@ -31,7 +31,6 @@ The sheet includes other details, like website/Twitter/Facebook links, plus the 
 - [ ] GeoJSON of councilors
     - How to handle line breaks on GitHub?
         - HTML, e.g. `<br>`
-        - Maybe replace `\n` w/ `;`
     - How does GitHub display nested JSON properties?
         - Arrays are comma-separated
         - Objects aren't expanded

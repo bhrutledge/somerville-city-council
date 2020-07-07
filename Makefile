@@ -44,7 +44,7 @@ $(councilors_geojson): $(councilors_csv)
 $(councilors_csv):
 	curl -L \
 		https://docs.google.com/spreadsheets/d/e/2PACX-1vRCu1dHFqjvWvgix9BZzkumdiOKBATUghucaYpgZTzhC1g4fuVOwg-_IMH3HWoEGKlC1CWiymXB6HfV/pub?output=csv \
-	| tr -d '\r' > $@
+	| ./process_csv.py | tr -d '\r' > $@
 
 .PHONY: clean
 clean:
