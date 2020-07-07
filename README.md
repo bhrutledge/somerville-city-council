@@ -3,8 +3,11 @@
 Geographic data for wards and city councilors with names and contact information.
 
 Open any `.geojson` file on GitHub to view the data as a map. For example:
-
 [Councilors and Wards](https://github.com/bhrutledge/somerville-city-council/blob/master/somerville_city_council.geojson)
+
+There's also a [Google Map](https://www.google.com/maps/d/edit?mid=1NdzlUAOXIOcEXqEbAkA9X0g-auts70Ue). However, it might not be in sync with the files in this repo; there's an [open issue](https://github.com/bhrutledge/somerville-city-council/issues/4) with more details.
+
+Feedback welcome on the [issue tracker](https://github.com/bhrutledge/somerville-city-council/issues).
 
 ## Build instructions
 
@@ -29,31 +32,3 @@ I couldn't find information about the city council in a structured format. Scrap
 [Google Sheet: Somerville City Council](https://docs.google.com/spreadsheets/d/1JCxK8rt9akj3HUKUE54cydyKgTsZnA9iSNZEGP_6d8Q)
 
 The sheet includes other details, like website/Twitter/Facebook links, plus the latitude/longitude of each councilor's address, which was quick to add via a [Sheets add-on](https://gsuite.google.com/marketplace/app/geocode_by_awesome_table/904124517349) (but there's also an [open-source macro](https://github.com/nuket/google-sheets-geocoding-macro)).
-
-## TODO
-
-- [ ] Move these to GitHub issues
-
-- [ ] Add license
-
-- [ ] GeoJSON of councilors
-    - Nested arrays for "Websites" and "Committees"?
-        - Probably via Python
-        - Displayed w/ commas on GitHub
-
-- [ ] GeoJSON of wards
-    - Add demographic data
-
-- [x] GeoJSON of wards & councilors
-
-- [ ] [Google Map of wards & councilors](https://www.google.com/maps/d/edit?mid=1NdzlUAOXIOcEXqEbAkA9X0g-auts70Ue)
-    - Using imported KML
-    - Include styling in KML
-
-- [ ] Gist w/ `marker-color` to distinguish yes/no votes
-
-- [ ] Find city council data source
-    - [Mass Dept. of Revenue - DLS Gateway](https://dlsgateway.dor.state.ma.us/gateway/DLSPublic/Search#)
-        - via Code For Boston
-        - Not as complete as website
-        - Requires form `POST` to download Excel w/ cumbersome layout
