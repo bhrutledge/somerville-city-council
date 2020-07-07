@@ -3,9 +3,24 @@ wards_shz := somerville_wards.shz
 councilors_geojson := somerville_councilors.geojson
 councilors_csv := somerville_councilors.csv
 council_geojson := somerville_city_council.geojson
+council_kml := somerville_city_council.kml
 
 .PHONY: all
-all: $(council_geojson)
+all: $(council_geojson) $(council_kml)
+
+$(council_kml): $(wards_geojson) $(councilors_geojson)
+	$(eval wards_table = $(basename $<))
+	$(eval councilors = $(word 2, $^))
+	$(eval councilors_table = '$(councilors)'.$(basename $(councilors)))
+	ogr2ogr -f KML /vsistdout/ $< \
+		-sql " \
+			SELECT * from $(councilors_table) \
+			UNION ALL SELECT Ward AS name, * from $(wards_table) \
+		" \
+	| sed " \
+		s/SELECT/$(basename $@)/g ;\
+		/marker-symbol/d; \
+	" > $@
 
 $(council_geojson): $(wards_geojson) $(councilors_geojson)
 	$(eval wards_table = $(basename $<))

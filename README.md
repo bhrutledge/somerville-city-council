@@ -41,18 +41,13 @@ The sheet includes other details, like website/Twitter/Facebook links, plus the 
 
 - [x] GeoJSON of wards
 
-- [x] GeoJSON of council
+- [x] GeoJSON of wards & councilors
 
-- [ ] Update [Google Map of wards & councilors](https://www.google.com/maps/d/edit?mid=1NdzlUAOXIOcEXqEbAkA9X0g-auts70Ue)
-    - Currently a proof of concept
-        - Councilors imported from Sheet, but not connected
-        - Wards imported from [KML converted from Shapefile](https://mygeodata.cloud/converter/shp-to-kml)
-            - Unsorted, includes extra data
-    - Using KML from GeoJSON
+- [ ] [Google Map of wards & councilors](https://www.google.com/maps/d/edit?mid=1NdzlUAOXIOcEXqEbAkA9X0g-auts70Ue)
+    - Imported KML
+    - Include styling in KML
 
 - [ ] Branch w/ `marker-color` to distinguish yes/no votes
-
-- [ ] Share repo & Google Map
 
 - [ ] Investigate [Mass Dept. of Revenue - DLS Gateway](https://dlsgateway.dor.state.ma.us/gateway/DLSPublic/Search#) as data source
     - via Code For Boston
