@@ -13,8 +13,8 @@ $(council_geojson): $(wards_geojson) $(councilors_geojson)
 	$(eval councilors_table = '$(councilors)'.$(basename $(councilors)))
 	ogr2ogr -f GeoJSON /vsistdout/ $< \
 		-sql " \
-			SELECT * FROM $(wards_table) \
-			UNION ALL SELECT * FROM $(councilors_table) \
+			SELECT * FROM $(councilors_table) \
+			UNION ALL SELECT * FROM $(wards_table) \
 		" \
 		-lco RFC7946=YES -lco WRITE_NAME=NO \
 	| python3 -m json.tool > $@
