@@ -16,7 +16,7 @@
                 "Committees": "Confirmation of Appointments and Personnel Matters\nEquity, Gender, Families, and Vulnerable Populations\nHousing and Community Development (Chair)\nFlood Forum\nAffordable Housing Trust\nCommunity Cabinet",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1401-Kristen-Strezo#votes",
                 "URL": "https://www.somervillema.gov/departments/city-council/at-large-1",
-                "marker-color": "#777"
+                "marker-symbol": "a"
             },
             "geometry": {
                 "type": "Point",
@@ -41,7 +41,7 @@
                 "Committees": "Confirmation of Appointments and Personnel Matters\nEquity, Gender, Families, and Vulnerable Populations (Chair)\nFinance\nLicenses and Permits (Vice Chair)\nOpen Space, Environment, and Energy (Vice Chair)\nParking Study Working Group",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1329-Wilfred-N-Mbah#votes",
                 "URL": "https://www.somervillema.gov/departments/city-council/at-large-2",
-                "marker-color": "#777"
+                "marker-symbol": "a"
             },
             "geometry": {
                 "type": "Point",
@@ -66,7 +66,7 @@
                 "Committees": "Finance\nLand Use\nLicenses and Permits (Chair)\nOpen Space, Environment, and Energy\nPublic Utilities and Public Works (Vice Chair)\nRules (Chair)\nMinimum Mixed Use Ratio Working Group",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1005-William-A-White-Jr#votes",
                 "URL": "https://www.somervillema.gov/departments/city-council/at-large-3",
-                "marker-color": "#777"
+                "marker-symbol": "a"
             },
             "geometry": {
                 "type": "Point",
@@ -91,7 +91,7 @@
                 "Committees": "Confirmation of Appointments and Personnel Matters (Chair)\nFinance\nFlood Forum\nHigh School Building Committee\nRodent Issues\nRules (Vice Chair)",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1209-Mary-Jo-Rossetti#votes",
                 "URL": "https://www.somervillema.gov/departments/city-council/at-large-4",
-                "marker-color": "#777"
+                "marker-symbol": "a"
             },
             "geometry": {
                 "type": "Point",
@@ -115,7 +115,8 @@
                 "Longitude": -71.0794224,
                 "Committees": "Confirmation of Appointments and Personnel Matters\nHousing and Community Development\nLand Use\nPublic Health and Public Safety\nRodent Issues",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1210-Matthew-McLaughlin#votes",
-                "URL": "https://www.somervillema.gov/departments/city-council/ward-1"
+                "URL": "https://www.somervillema.gov/departments/city-council/ward-1",
+                "marker-symbol": "1"
             },
             "geometry": {
                 "type": "Point",
@@ -139,7 +140,8 @@
                 "Longitude": -71.0973402,
                 "Committees": "Confirmation of Appointments and Personnel Matters (Vice Chair)\nFinance (Chair)\nLegislative Matters\nLicenses and Permits\nOpen Space, Environment, and Energy",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1330-Jefferson-Thomas-JT-Scott#votes",
-                "URL": "https://www.somervillema.gov/departments/city-council/ward-2"
+                "URL": "https://www.somervillema.gov/departments/city-council/ward-2",
+                "marker-symbol": "2"
             },
             "geometry": {
                 "type": "Point",
@@ -163,7 +165,8 @@
                 "Longitude": -71.0970617,
                 "Committees": "Housing and Community Development (Vice Chair)\nLand Use (Chair)\nLegislative Matters\nOffice of Housing Stability Advisory Board\nOpen Space, Environment, and Energy\nSomerville Redevelopment Authority",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1331-Ben-Ewen-Campen#votes",
-                "URL": "https://www.somervillema.gov/departments/city-council/ward-3"
+                "URL": "https://www.somervillema.gov/departments/city-council/ward-3",
+                "marker-symbol": "3"
             },
             "geometry": {
                 "type": "Point",
@@ -187,7 +190,8 @@
                 "Longitude": -71.0856265,
                 "Committees": "Confirmation of Appointments and Personnel Matters\nDedications Steering Committee\nLegislative Matters\nMunicipal Job Creation and Retention Trust Fund\nPublic Health and Public Safety (Vice Chair)\nPublic Utilities and Public Works (Chair)\nTraffic and Parking (Vice Chair)",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1332-Jesse-Clingan#votes",
-                "URL": "https://www.somervillema.gov/departments/city-council/ward-4"
+                "URL": "https://www.somervillema.gov/departments/city-council/ward-4",
+                "marker-symbol": "4"
             },
             "geometry": {
                 "type": "Point",
@@ -211,7 +215,8 @@
                 "Longitude": -71.111761,
                 "Committees": "Flood Forum (Vice Chair)\nLand Use\nLegislative Matters (Vice Chair)\nParking Study Working Group\nSenior Services (Vice Chair)\nTraffic Commission\nTraffic and Parking (Chair)",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1208-Mark-Niedergang#votes",
-                "URL": "https://www.somervillema.gov/departments/city-council/ward-5"
+                "URL": "https://www.somervillema.gov/departments/city-council/ward-5",
+                "marker-symbol": "5"
             },
             "geometry": {
                 "type": "Point",
@@ -235,7 +240,8 @@
                 "Longitude": -71.117441,
                 "Committees": "Land Use (Vice Chair)\nLegislative Matters (Chair)\nPublic Health and Public Safety (Chair)\nRules",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1273-Lance-L-Davis#votes",
-                "URL": "https://www.somervillema.gov/departments/city-council/ward-6"
+                "URL": "https://www.somervillema.gov/departments/city-council/ward-6",
+                "marker-symbol": "6"
             },
             "geometry": {
                 "type": "Point",
@@ -259,7 +265,8 @@
                 "Longitude": -71.1284163,
                 "Committees": "Bicycle Advisory Committee\nComplete Count Committee\nEquity, Gender, Families, and Vulnerable Populations (Vice Chair)\nFinance (Vice Chair)\nFlood Forum (Chair)\nMinimum Mixed Use Ratio Working Group\nOpen Space, Environment, and Energy (Chair)\nPedestrian and Transit Advisory Committee\nPublic Utilities and Public Works\nTraffic and Parking",
                 "Votes": "http://somervillecityma.iqm2.com/Citizens/Board-Member/1214-Katjana-Ballantyne#votes",
-                "URL": "https://www.somervillema.gov/departments/city-council/ward-7"
+                "URL": "https://www.somervillema.gov/departments/city-council/ward-7",
+                "marker-symbol": "7"
             },
             "geometry": {
                 "type": "Point",

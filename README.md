@@ -40,7 +40,6 @@ The sheet includes other details, like website/Twitter/Facebook links, plus the 
     - Probably via Python
 
 - [ ] GeoJSON of councilors
-    - Distinguish "At-Large" councilors (maybe w/ [style](https://docs.github.com/en/github/managing-files-in-a-repository/mapping-geojson-files-on-github#styling-features))
     - How to handle line breaks on GitHub?
         - HTML, e.g. `<br>`
     - How does GitHub display nested JSON properties?

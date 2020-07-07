@@ -34,13 +34,9 @@ $(councilors_geojson): $(councilors_csv)
 	ogr2ogr -f GeoJSON /vsistdout/ $< \
 		-a_srs EPSG:4326 \
 		-oo X_POSSIBLE_NAMES=Longitude -oo Y_POSSIBLE_NAMES=Latitude \
-		-sql "\
-			SELECT *, '#777' AS \"marker-color\" \
+		-dialect SQLITE -sql "\
+			SELECT *, CASE Ward WHEN 'At-Large' THEN 'a' ELSE Ward END AS 'marker-symbol' \
 			FROM $(councilors_table) \
-			WHERE Ward = 'At-Large'\
-			UNION ALL SELECT * \
-			FROM $(councilors_table) \
-			WHERE Ward != 'At-Large'\
 		" \
 		-lco RFC7946=YES -lco WRITE_NAME=NO \
 	| python3 -m json.tool > $@
