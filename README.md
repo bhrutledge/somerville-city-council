@@ -1,6 +1,12 @@
-# Somerville City Council Map
+# Somerville City Council Data
 
-Goal: Create a map of wards with names and contact information for city councilors.
+Geographic data for wards and city councilors with names and contact information.
+
+Open any `.geojson` file on GitHub to view the data as a map. For example:
+
+[Councilors and Wards](https://github.com/bhrutledge/somerville-city-council/blob/master/somerville_city_council.geojson)
+
+## Build instructions
 
 This uses the [ogr2ogr](https://gdal.org/programs/ogr2ogr.html) command-line tool from [GDAL](https://gdal.org/) to convert between formats. On macOS, you can install GDAL with Homebrew:
 
@@ -14,7 +20,7 @@ Then, to re-download the data and rebuild the output, run:
 make -B
 ```
 
-## Data Sources
+## Data sources
 
 The ward boundaries are available as a zipped [ESRI Shapefile](https://en.wikipedia.org/wiki/Shapefile) at <https://data.somervillema.gov/GIS-data/Wards/ym5n-phxd>.
 
@@ -29,14 +35,9 @@ The sheet includes other details, like website/Twitter/Facebook links, plus the 
 - [ ] Move these to GitHub issues
 
 - [ ] GeoJSON of councilors
-    - How to handle line breaks on GitHub?
-        - HTML, e.g. `<br>`
-    - How does GitHub display nested JSON properties?
-        - Arrays are comma-separated
-        - Objects aren't expanded
-    - From JSON instead of CSV?
-        - Arrays instead of newlines
+    - Nested arrays for "Websites" and "Committees"?
         - Probably via Python
+        - Displayed w/ commas on GitHub
 
 - [x] GeoJSON of wards
 
